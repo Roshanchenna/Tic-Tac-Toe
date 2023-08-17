@@ -57,3 +57,15 @@ body {
   margin: 20px 0;
   color: #ebf529;
 }
+
+.btn{
+  font-size: x-large;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px white solid;
+}
+.btn:hover{
+  background-color: #32dcdc;
+}
+
+

@@ -49,11 +49,17 @@ const App = () => {
     ? `${winner} wins!`
     : `Turn : ${xIsNext ? 'X' : 'O'}`;
 
+	const reset = ()=>{
+		window.location.reload();
+	};
+
   return (
     <div className="game">
       <h1 className="title">Tic Tac Toe</h1>
       <div className="status">{status}</div>
       <Board squares={board} onClick={handleClick} />
+      <br/>
+       <div><button className="btn" onClick={reset}> Reset </button> </div>
     </div>
   );
 };
